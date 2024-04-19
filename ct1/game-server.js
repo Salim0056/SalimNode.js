@@ -7,7 +7,7 @@ console.log('Ready to play...');
 responser.on('message', (msg) => {
   const data = JSON.parse(msg.toString());
   console.log(`Received request: ${msg.toString()}`);
-
+  
   if (data.type === 'start') 
   {
     const min = data.min;
