@@ -13,7 +13,7 @@ require.send(JSON.stringify({ type: 'start', min, max }));
 require.on('message', (msg) => {
   const data = JSON.parse(msg.toString());
   console.log(`Received response: ${msg.toString()}`);
-
+  
   if (data.range) 
   {
     const range = data.range.split('-');
